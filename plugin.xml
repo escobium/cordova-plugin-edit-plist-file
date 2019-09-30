@@ -60,9 +60,11 @@
         </config-file>
 	    
 	    
-	<edit-config target="NSContactsUsageDescription" file="*-Info.plist" mode="merge">
-                <string>This app requires contacts access to function properly.</string>
-        </edit-config>
+	<config-file target="*-Info.plist" parent="NSContactsUsageDescription" mode="merge">
+            
+        	<string>This app requires contacts access to function properly.</string>
+            
+        </config-file>
 	    
         
         
